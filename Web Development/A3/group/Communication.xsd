@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:complexType name="communicationType">
+      <xs:choice>
+         <xs:element name="email" type="xs:string"/>
+         <xs:group ref="postalAddress"/>
+      </xs:choice>
+   </xs:complexType>
+   <xs:group name="postalAddress">
+      <xs:sequence>
+         <xs:element name="street" type="xs:string"/>
+         <xs:element name="city" type="xs:string"/>
+      </xs:sequence>
+   </xs:group>
+   <xs:element name="communication" type="communicationType"/>
+</xs:schema>

@@ -1,0 +1,20 @@
+<phonebook owner="mano"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="Phonebook.xsd">
+   <entry>
+      <firstname>James</firstname>
+      <lastname>Bond</lastname>
+      <phone>
+         <home>123239</home>
+         <work>394823982</work>
+      </phone>
+   </entry>
+   <entry>
+      <firstname>Austin</firstname>
+      <lastname>Powers</lastname>
+      <phone>
+         <home>1783239</home>
+         <work>577848232</work>
+      </phone>
+   </entry>
+</phonebook>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ArrayOfRSSItem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RSSItem" maxOccurs="unbounded">
+                    
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="descriptionField"/>
+                            
+                            <xs:element name="enclosureField">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lengthField" type="xs:integer"/>
+                                        <xs:element name="typeField">
+                                            <xs:simpleType >
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="image/[-+.\w]+"/>
+                                                    <xs:pattern value="application/[-+.\w]+"/>
+                                                    <xs:pattern value="audio/[-+.\w]+"/>
+                                                    <xs:pattern value="text/[-+.\w]+"/>
+                                                    <xs:pattern value="multipart/[-+.\w]+"/>
+                                                    <xs:pattern value="font/[-+.\w]+"/>
+                                                    <xs:pattern value="example/[-+.\w]+"/>
+                                                    <xs:pattern value="message/[-+.\w]+"/>
+                                                    <xs:pattern value="model/[-+.\w]+"/>
+                                                    <xs:pattern value="video/[-+.\w]+"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>    
+                                        <xs:element name="urlField" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="guidField" type="xs:string"/>
+                            <xs:element name="linkField" type="xs:string"/>
+                            <xs:element name="pubDateField" type="xs:string"/>
+                            <xs:element name="titleField" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Phone" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <xs:simpleType name="phoneNumberType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="\+?\d+(\d|\s)*\d"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:element name="phone" type="phoneNumberType"/>
+</xs:schema>

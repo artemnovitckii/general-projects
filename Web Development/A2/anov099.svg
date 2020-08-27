@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400, 400">
+    <g>
+        <circle cx="200" cy="200" r="194" stroke="black" stroke-width="4" fill="#ffffff"/>
+        <circle cx="200" cy="200" r="138" stroke="black" stroke-width="4" fill="#ffffff"/>
+        
+        <polyline points="200,87 112,133 289,133 200,87" stroke="black" stroke-width="16" fill="black" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+        
+        <polyline points="121,154 279,154" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+
+        <polyline points="139,176 139,220" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        <polyline points="170,176 170,220" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        <polyline points="200,176 200,220" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        <polyline points="231,176 231,220" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        <polyline points="262,176 262,220" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+
+        <polyline points="121,242 279,242" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+
+        <polyline points="112,264 288,264" stroke="black" fill="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="17"/>
+           
+    </g>
+
+</svg>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <html lang='en'>
+         <meta charset="UTF-8" />
+         <link rel="shortcut icon" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png">
+         <link rel="stylesheet" type="text/css" href="anov099.css">
+         <script defer src="anov099.js"></script>
+        <title>The Bob Doran Museum of Computing </title>
+    <script type="text/javascript">
+        let currentTab = "";
+        function showHomeTab() {
+            if(currentTab != "HomeTab"){
+                currentTab = "HomeTab";
+                showNoTabs();
+                document.getElementById("HomeTab").style.backgroundColor = "#9dd3f7";
+                document.getElementById("HomePage").style.display = "inline";
+            }
+        }
+
+        function showNewsTab() {
+         if (currentTab != "NewsTab") {
+            currentTab = "NewsTab";
+            showNoTabs();
+            document.getElementById("NewsTab").style.backgroundColor = "#9dd3f7";
+            document.getElementById("NewsPage").style.display = "inline";
+         }
+      }
+
+      function showDisplaysTab() {
+         if (currentTab != "DisplayTab") {
+            currentTab = "DisplayTab";
+            showNoTabs();
+            document.getElementById("DisplayTab").style.backgroundColor = "#9dd3f7";
+            document.getElementById("DisplayPage").style.display = "inline";
+         }
+      }
+      
+      function showGuestBook() {
+         if (currentTab != "GuestBookTab") {
+            currentTab = "GuestBookTab";
+            showNoTabs();
+            document.getElementById("GuestBookTab").style.backgroundColor = "#9dd3f7";
+            document.getElementById("GuestBookPage").style.display = "inline";
+         }
+      }
+    
+
+    function showNoTabs() {
+         document.getElementById("HomeTab").style.backgroundColor = "transparent";
+         document.getElementById("NewsTab").style.backgroundColor = "transparent";
+         document.getElementById("DisplayTab").style.backgroundColor = "transparent";
+         document.getElementById("GuestBookTab").style.backgroundColor = "transparent";
+
+         document.getElementById("HomePage").style.display = "none";
+         document.getElementById("NewsPage").style.display = "none";
+         document.getElementById("DisplayPage").style.display = "none";
+         document.getElementById("GuestBookPage").style.display = "none";
+      }
+    </script>
+    </head>
+    <body class="background">
+    <nav>
+            <table class="tabs" style="width: 100%;">
+               <tr>
+                  <td> 
+                     <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg" style="width:100px;">
+                  </td>
+
+                  <td id="HomeTab" class="center" onclick="showHomeTab();">
+                     🏠 Home
+                  </td>
+                  <td id="NewsTab" class="center" onclick="showNewsTab();">
+                     📰 News
+                  </td>
+                  <td id="DisplayTab" class="center" onclick="showDisplaysTab();">
+                     💻 Displays
+                  </td>
+                  <td id="GuestBookTab" class="center" onclick="showGuestBook();">
+                     📖 Guest Book
+                  </td>
+                  
+               </tr>
+            </table>
+
+         </nav>
+         <div id="HomePage">
+            <section>
+               <h1 class="header">
+                  The Bob Doran Museum of Computing
+               </h1>
+               <hr class="breaker">
+               <p class="paragraphHome">
+                  Welcome to The Bob Doran Museum of Computing. You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the school and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.
+               </p>
+               <img src="https://images.robertharding.com/preview/RM/RH/HORIZONTAL/777-165.jpg" width="100%">
+            </section>
+         </div>
+         <div id="NewsPage">
+            <section>
+               <h1 class="header">
+                  News
+               </h1>
+               <hr class="breaker">
+               
+               <p id="News" align="center">
+                  
+               </p>
+
+            </section>
+         </div>
+         <div id="DisplayPage">
+            <section>
+               <h1 class="header">
+                  Displays
+               </h1>
+               <hr class="breaker">
+               </br>
+               <input type="text" id="myInput" onkeyup="searchGetDisplay()" placeholder="🔍"  class="search" align="center">
+               <p id="Displaying" align="center">
+                  
+               </p>
+            </section>
+         </div>
+         <div id="GuestBookPage">
+            <section>
+               <h1 class="header">
+                  Guest Book
+               </h1>
+
+               <hr class="breaker">
+
+              
+
+            <h1 class="paragraph">
+               Please sign our guest book. Your comments are greatly appriciated.
+            </h1>
+            <textarea id="comment" placeholder="Comment..." class="comment"></textarea>
+            </br>
+            </br>
+            <input type="textarea" id="name" placeholder="Name.." class="commentName"  align="center">
+            <
+            </br>
+            </br>
+            <button type="button" onclick="postComments()" class="button1">Submit</button>
+            </br>
+            </br>
+            <h2 class="paragraph">
+               Latest Comments:
+            </h2>
+            <iframe src="http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments" id="frame" class="search" width="100%" height="400px">
+            </iframe>
+            </section>
+         </div>
+   <hr class="breaker2">
+   <footer id="version" align="center"></footer>
+    </body>
+</html>

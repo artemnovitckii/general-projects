@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="400" width="400">
+   <g transform="rotate(270,200,200)">
+      <path d="M 100 100 L 300 300" stroke="red" stroke-width="10" />
+      <path d="M 300 300 L 100 300" stroke="red" stroke-width="10" />
+   </g>
+</svg>

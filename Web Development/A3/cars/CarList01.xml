@@ -1,0 +1,10 @@
+<cars>
+   <car plate="UQ 5305">
+      <color>blue</color>
+      <make>Mazda</make>
+   </car>
+   <car plate="DPJ 379">
+      <color>white</color>
+      <make>Fiat</make>
+   </car>
+</cars>

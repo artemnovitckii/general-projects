@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:simpleType name="makeType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Mazda"/>
+         <xs:enumeration value="Fiat" />
+         <xs:enumeration value="Toyota" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="plateType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[A-Z]{2}\s\d{4}" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="carType">
+      <xs:sequence>
+         <xs:element name="color" type="xs:string"/>
+         <xs:element name="make" type="makeType"/>
+      </xs:sequence>
+      <xs:attribute name="plate" type="plateType"/>
+   </xs:complexType>
+   <xs:element name="car" type="carType"/>
+</xs:schema>

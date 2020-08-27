@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-16"?>
+<EditableLambdaExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NodeType>Lambda</NodeType>
+  <TypeName>System.Func`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+  <Body xsi:type="EditableBinaryExpression">
+    <NodeType>Multiply</NodeType>
+    <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+    <Left xsi:type="EditableBinaryExpression">
+      <NodeType>Add</NodeType>
+      <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+      <Left xsi:type="EditableParameterExpression">
+        <NodeType>Parameter</NodeType>
+        <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+        <Name>x</Name>
+      </Left>
+      <Right xsi:type="EditableConstantExpression">
+        <NodeType>Constant</NodeType>
+        <Value xsi:type="xsd:int">1</Value>
+      </Right>
+    </Left>
+    <Right xsi:type="EditableBinaryExpression">
+      <NodeType>Add</NodeType>
+      <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+      <Left xsi:type="EditableParameterExpression">
+        <NodeType>Parameter</NodeType>
+        <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+        <Name>x</Name>
+      </Left>
+      <Right xsi:type="EditableConstantExpression">
+        <NodeType>Constant</NodeType>
+        <Value xsi:type="xsd:int">2</Value>
+      </Right>
+    </Right>
+  </Body>
+  <Parameters>
+    <EditableExpression xsi:type="EditableParameterExpression">
+      <NodeType>Parameter</NodeType>
+      <TypeName>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</TypeName>
+      <Name>x</Name>
+    </EditableExpression>
+  </Parameters>
+</EditableLambdaExpression>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>SVG Shapes</title>
+</head>
+<body>
+   <h2>
+      Text Example
+   </h2>
+   <svg height="240" width="600">
+      <text x="10" y="200" font-family="sans-serif" font-size="200"
+            font-weight="bolder" stroke="red" fill="red">
+         SVG
+      </text>
+   </svg>
+   <p>
+      Rotated text:
+   </p>
+   <svg height="400" width="600">
+      <text x="10" y="200" font-family="sans-serif" font-size="200"
+            font-weight="bolder" stroke="red" fill="red"
+            transform="rotate(180,220,200)">
+         SVG
+      </text>
+   </svg>
+   <h2>
+      Line Example
+   </h2>
+   <svg style="border-style: solid; border-width: 2px;" height="200px"
+        width="200px" xmlns="http://www.w3.org/2000/svg">
+      <line x1="10" y1="20" x2="100" y2="200" stroke="green" stroke-width="2" />
+   </svg>
+   <h2>
+      Circle Example
+   </h2>
+   <svg id="svgCircle" height="100" width="360">
+      <circle id="Circle1" cx="60" cy="55" r="30" fill="green" stroke="black" stroke-width="2" />
+      <circle id="Circle2" cx="300" cy="55" r="30" fill="red" stroke="black" stroke-width="2" />
+   </svg>
+   <h2>
+      Ellipse Example
+   </h2>
+   <svg height="150" width="300">
+      <ellipse cx="120" cy="60" rx="100" ry="50" fill="#4099FF" stroke="black"
+               stroke-width="3" />
+   </svg>
+   <h2>
+      Rectangle Example
+   </h2>
+   <svg height="150" width="320">
+      <ellipse cx="120" cy="60" rx="100" ry="50" fill="green" stroke="black"
+               stroke-width="3" />
+      <rect width="300" height="100" stroke="#4099FF" stroke-width="2"
+            fill="#4099FF" fill-opacity="0.5" stroke-opacity="0.5" />
+   </svg>
+   <h2>
+      Polyline Example
+   </h2>
+   <svg height="200" width="500">
+      <polyline points="50 150 250 50 250 150" stroke="red" stroke-width="2"
+                fill="none" />
+   </svg>
+   <h2>
+      Polygon Example
+   </h2>
+   <svg height="200" width="500">
+      <polygon points="50 150 250 50 250 150" stroke="red" stroke-width="2"
+               fill="none" />
+   </svg>
+   <h2>
+      Composite Example
+   </h2>
+   <p>
+      Using three circles and two lines to connect them:
+   </p>
+   <svg id="svg1" height="200" width="500">
+      <circle id="CircleL" cx="50" cy="150" r="20" fill="red" stroke="red" stroke-width="2" />
+      <circle id="CircleR" cx="250" cy="150" r="20" fill="red" stroke="red" stroke-width="2" />
+      <circle id="CircleT" cx="250" cy="50" r="20" fill="red" stroke="red" stroke-width="2" />
+      <line id="LineL" x1="50" y1="150" x2="250" y2="50" stroke="red" stroke-width="42" />
+      <line id="LineR" x1="250" y1="150" x2="250" y2="50" stroke="red" stroke-width="42" />
+   </svg>
+
+   <p>
+      This can be simplified using a single polyline:
+   </p>
+   <svg height="200" width="500">
+      <polyline points="50 150 250 50 250 150" stroke="red" stroke-width="42"
+                stroke-linecap="round" stroke-linejoin="round" fill="none" />
+   </svg>
+   <h2>
+      Gradients
+   </h2>
+   <svg height="150" width="400">
+      <defs>
+         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: rgb(255,255,0); stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: rgb(255,0,0); stop-opacity: 1" />
+         </linearGradient>
+      </defs>
+      <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+   </svg>
+   <h2>
+      Gradients with Text
+   </h2>
+   <svg height="150" width="400">
+      <defs>
+         <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: rgb(255,255,0); stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: rgb(255,0,0); stop-opacity: 1" />
+         </linearGradient>
+      </defs>
+      <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" />
+      <text fill="red" font-size="45" font-family="Verdana" x="150" y="86">
+         SVG
+      </text>
+   </svg>
+   <h2>Path</h2>
+   <svg height="250" width="400">
+      <path d="M 10 10 L 75 200 S 225 200 225 100 Z"
+            stroke="black" stroke-width="4"
+            fill="none" />
+      <text x="10" y="10" dx="10" dy="5">(10, 10)</text>
+      <text x="75" y="200" dy="20">(75, 200)</text>
+      <text x="225" y="200" dx="-30" dy="20">(225, 200)</text>
+      <text x="225" y="100" dx="10">(225, 100)</text>
+   </svg>
+</body>
+</html>

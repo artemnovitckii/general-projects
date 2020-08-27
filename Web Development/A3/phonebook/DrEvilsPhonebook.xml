@@ -1,0 +1,13 @@
+<phonebook owner="Austin Powers">
+   <entry>
+      <firstname>James</firstname>
+      <familyname>Bond</familyname>
+      <phone>+44 1 77000007</phone>
+   </entry>
+   <entry>
+      <firstname>Don</firstname>
+      <familyname>Key</familyname>
+      <phone>+64 9 3704321</phone>
+      <phone>+64 21 456123</phone>
+   </entry>
+</phonebook>
