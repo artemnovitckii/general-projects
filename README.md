@@ -1,2 +1,2 @@
-# general-projects
-Here i stored all my projects written for UoA papers
+## General projects
+Here I stored all my projects written for UoA papers
