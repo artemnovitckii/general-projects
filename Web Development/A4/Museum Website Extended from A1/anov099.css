@@ -1,0 +1,151 @@
+.background {background-color: #f0e6ed;}
+
+.header { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.tabs {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+hr.breaker {
+    
+    width:100%;
+    border-radius: 5px;
+    border-top: 10px solid #fbc9c5
+}
+
+hr.breaker2{
+    width: 15%;
+    border-radius: 5px;
+    border-top: 5px solid #fbc9c5
+}
+
+.paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.paragraphHome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#newsHeader{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #805ea4;
+    font-size: 40px;
+
+}
+
+#newsDate{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #9dd3f7;
+    font-size: 30px;
+    
+}
+
+#newsParagraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#displayHeader{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #805ea4;
+    font-size: 40px; 
+}
+
+.search{
+    width:100%;
+    font-size: 30px;
+    color: #9dd3f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment{
+    width:100%;
+    height: 300px;
+    font-size: 30px;
+    color: #9dd3f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.commentName{
+    width:30%;
+    font-size: 30px;
+    color: #9dd3f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder{
+    color:#9dd3f7;
+}
+
+iframe { 
+    border:#ffffff; 
+    }
+
+.button1 {
+    background-color: #805ea4;
+    border: none;
+    color: #9dd3f7;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+  a:link, a:visited {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+.inputUserName {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-size: 20px;
+    color: #9dd3f7;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .feedbackPar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #805ea4;
+}
